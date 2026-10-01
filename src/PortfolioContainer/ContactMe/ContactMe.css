@@ -1,0 +1,157 @@
+.main-container {
+  min-height: 100vh;
+}
+
+.central-form {
+  max-width: 1100px;
+  padding: 20px 30px;
+  display: flex;
+  border-radius: 12px;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #1f2235;
+}
+
+.central-form h2 {
+  color: white;
+  letter-spacing: 0.2rem;
+  margin-bottom: 20px;
+}
+
+/* ---------- Social icons ---------- */
+
+.col i {
+  padding: 7px;
+  color: white;
+}
+
+.col i:hover {
+  transform: scale(1.5);
+}
+
+/* ---------- Image + form ---------- */
+
+.back-form {
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+.img-back {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.img-back h4 {
+  color: white;
+  letter-spacing: 0.3rem;
+  font-weight: 400;
+  font-size: 18px;
+  opacity: 0.5;
+}
+
+.img-back img {
+  width: 100%;
+  opacity: 0.5;
+}
+
+.central-form form {
+  width: auto;
+  display: flex;
+  color: black;
+  padding: 15px;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -52px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* Status banner above the fields */
+.central-form form p {
+  text-align: center;
+  margin-bottom: 10px;
+  color: var(--dark-orange);
+  letter-spacing: 0.4rem;
+  font-family: "Poppins Bold";
+}
+
+form label {
+  margin-bottom: 5px;
+  color: black;
+  letter-spacing: 0.2rem;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  border: 2px solid rgba(0, 0, 0, 0);
+  outline: none;
+  background-color: rgba(230, 230, 230, 0.6);
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+form textarea:focus,
+form input:focus {
+  border: 2px solid rgba(30, 85, 250, 0.47);
+  background-color: white;
+}
+
+/* ---------- Send button ---------- */
+
+form button {
+  margin-top: 15px;
+  padding: 5px;
+  outline: none;
+  width: 160px;
+  border: 2px solid var(--dark-orange);
+  font-size: 18px;
+  border-radius: 19px;
+  background-color: var(--dark-orange);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form button i {
+  margin-left: 8px;
+}
+
+/* Loading spinner shown inside the button while sending */
+.send-btn .load img {
+  width: 60px;
+}
+
+form button:hover {
+  background-color: white;
+  color: var(--dark-orange);
+  transition: 1s ease;
+  border: 2px solid var(--dark-orange);
+}
+
+/* ---------- Tablet & laptop: image beside the form ---------- */
+
+@media only screen and (min-width: 768px) {
+  .back-form {
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .img-back {
+    flex: 1;
+    align-self: center;
+    margin-right: 20px;
+  }
+
+  .central-form form {
+    flex: 0.9;
+    margin-top: 0;
+  }
+}
